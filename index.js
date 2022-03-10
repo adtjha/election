@@ -32,7 +32,7 @@ const data = {
     values: []
 }
 
-for (let i = 0; i < 41; i++) {
+for (let i = 0; i <= 41; i++) {
     fetch(`https://results.eci.gov.in/ResultAcGenMar2022/statewiseS241.htm?st=S24${i}`).then(response => {
         response.text().then(body => {
             const $ = cheerio.load(body);

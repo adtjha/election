@@ -1,0 +1,13 @@
+{
+  "url": "https://results.eci.gov.in/ResultAcGenMar2022/statewiseS241.htm?st=S24",
+  "pageStart": 1,
+  "pageEnd": 41,
+  "data": {
+    "table": {
+      "id": "#ElectionResult",
+      "keys": 2,
+      "valuesStart": 4,
+      "valuesEndRow": 13
+    }
+  }
+}
