@@ -1,0 +1,16 @@
+{
+  "name": "election",
+  "version": "1.0.0",
+  "description": "A scrapper to fetch election data from eci website and visualize them",
+  "exports": "./index.js",
+  "author": "adtjha",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.10",
+    "express": "^4.17.3",
+    "lowdb": "^3.0.0",
+    "node-cron": "^3.0.0",
+    "node-fetch": "^3.2.2"
+  }
+}
