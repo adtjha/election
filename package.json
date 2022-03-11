@@ -1,16 +1,3 @@
-{
-  "name": "election",
-  "version": "1.0.0",
-  "description": "A scrapper to fetch election data from eci website and visualize them",
-  "exports": "./index.js",
-  "author": "adtjha",
-  "license": "MIT",
-  "type": "module",
-  "dependencies": {
-    "cheerio": "^1.0.0-rc.10",
-    "express": "^4.17.3",
-    "lowdb": "^3.0.0",
-    "node-cron": "^3.0.0",
-    "node-fetch": "^3.2.2"
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2f9323c5336ee5f1c1ffa545682add8d520bb67ee74da0297308372b174d6b6b
+size 357
