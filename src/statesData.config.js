@@ -581,7 +581,7 @@ export default {
       ]
     },
     {
-      "name": "uttrakhand",
+      "name": "uttarakhand",
       "code": "S28",
       "constituencyList": [
         "52",

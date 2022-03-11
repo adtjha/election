@@ -8,7 +8,7 @@ import * as cheerio from 'cheerio'
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-const file = join(__dirname, 'db.json')
+const file = join(__dirname, 'raw.db.json')
 const adapter = new JSONFile(file)
 const db = new Low(adapter)
 
@@ -28,6 +28,7 @@ app.get('/:state/:constituency', (req, res) => {
     const body = raw[state][constituency]
     // const $ = cheerio.load(body)
     res.send(body)
+    // res.send()
 })
 
 // For each state,
@@ -37,7 +38,7 @@ app.get('/:state/:constituency', (req, res) => {
 // store in state file
 // Create a singleton writer
 
-// import stateConfig from './src/statesData.config'
+// import stateConfig from './src/statesData.config.js'
 
 // const fetchStateData = async (index) => {
 //     return new Promise(async (resolve, reject) => {
@@ -64,13 +65,11 @@ app.get('/:state/:constituency', (req, res) => {
 
 // (async () => {
 //     console.log('Start Fetching Data')
-//     for (let i = 0; i <= stateConfig.states.length; i++) {
-//         if (i === 0 || i === 2) {
-//             console.log(`****************************${stateConfig.states[i].name}****************************`)
-//             await fetchStateData(i)
-//             await new Promise((resolve, reject) => setTimeout(() => resolve(), 3000))
-//             console.log(`********************************************************`)
-//         }
+//     for (let i = 0; i < stateConfig.states.length; i++) {
+//         console.log(`****************************${stateConfig.states[i].name}****************************`)
+//         await fetchStateData(i)
+//         await new Promise((resolve, reject) => setTimeout(() => resolve(), 3000))
+//         console.log(`********************************************************`)
 //     }
 //     await db.write()
 //     console.log('Fetching Data Ended')
