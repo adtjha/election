@@ -1,2 +1,4 @@
-*.db.json filter=lfs diff=lfs merge=lfs -text
+db/skeleton.db.json filter=lfs diff=lfs merge=lfs -text
+db/tables.db.json filter=lfs diff=lfs merge=lfs -text
+db/raw.db.json filter=lfs diff=lfs merge=lfs -text
 db/*.db.json filter=lfs diff=lfs merge=lfs -text
